@@ -1,0 +1,42 @@
+#proyecto {
+  padding-top: 80px;
+  #title {
+    margin-bottom: 30px;
+  }
+  #contentContainer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  #imagenProyecto {
+    aspect-ratio: 1 / 1;
+    width: 38%;
+    border-radius: 999px;
+    margin-right: 5%;
+  }
+  #videoButton {
+    margin-top: 20px;
+  }
+}
+
+// @media (max-width: 994px) {
+//   #proyecto {
+
+//   }
+// }
+
+@media (max-width: 769px) {
+  #proyecto {
+    #contentContainer {
+      flex-direction: column;
+    }
+    #imagenProyecto {
+      aspect-ratio: 1 / 1;
+      width: 80%;
+      border-radius: 999px;
+      margin-right: 5%;
+    }
+  }
+}

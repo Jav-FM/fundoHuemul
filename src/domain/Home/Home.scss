@@ -1,0 +1,91 @@
+#home {
+  padding-top: 60px;
+  #background-video {
+    width: 100vw;
+    height: 850px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  #preTitle {
+    font-size: 100px;
+  }
+  #title {
+    margin-top: 220px;
+    font-size: 70px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #202020;
+    line-height: 60px;
+  }
+  #subtitle {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #202020;
+  }
+  .homeButton {
+    width: 200px;
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+  #homeGeneralCard {
+    display: none;
+    width: 100%;
+    min-height: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 4px solid #202020;
+    margin-top: 150px;
+  }
+  .generalTitle {
+    margin-top: 25px;
+  }
+  #homeCardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 220px;
+    gap: 20px;
+    padding: 0;
+  }
+  .homeCard {
+    width: 400px;
+    min-height: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 4px solid #202020;
+  }
+}
+
+@media (max-width: 994px) {
+  #home {
+    #homeCardsContainer {
+      display: none;
+    }
+    #homeGeneralCard {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  #home {
+    #preTitle {
+      font-size: 85px;
+    }
+    #title {
+      font-size: 60px;
+    }
+    #subtitle {
+      font-size: 30px;
+    }
+    .homeButton {
+      width: 185px;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  background-color: #ffffff !important;
+  color: #202020 !important;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+//Navbar y footer:
+.navbar {
+  background-color: #202020;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Maven Pro", sans-serif;
+}
+
+h4,
+h5,
+p,
+li {
+  font-family: "Public Sans", sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h3,
+h4 {
+  font-weight: 500;
+}
+
+h5,
+p {
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+}

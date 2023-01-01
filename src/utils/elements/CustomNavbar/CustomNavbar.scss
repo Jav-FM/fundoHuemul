@@ -1,0 +1,29 @@
+#navbar {
+  font-family: "Public Sans", sans-serif;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  #logo {
+    width: 100px;
+    height: auto;
+  }
+  .linksContainer {
+    width: 100%;
+    // display: flex;
+    // justify-content: space-around;
+  }
+  .nav-link {
+    color: #a3a1a1;
+    font-size: 20px;
+    margin-right: 10px;
+    &:hover {
+      color: #c9c8c8;
+    }
+  }
+  .navbar-nav .show > .nav-link,
+  .navbar-nav .nav-link.active {
+    color: #ffffff;
+  }
+}
