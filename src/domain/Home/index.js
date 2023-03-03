@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./Home.scss";
 import { Proyecto } from "../Proyecto";
@@ -10,10 +10,13 @@ import { Galeria } from "../Galeria";
 import { Contacto } from "../Contacto";
 import homeVideo from "../../assets/video/video-header.mp4";
 import videoPoster from "../../assets/img/imagen-poster.jpg";
+import { CustomModal } from "../../utils/elements/CustomModal";
 
 const Home = () => {
+  const [showModal, setShowModal] = useState(true);
   return (
     <React.Fragment>
+      <CustomModal show={showModal} setShow={setShowModal} />
       <div id="home" className="container">
         <video id="background-video" autoPlay loop muted poster={videoPoster}>
           <source src={homeVideo} />
@@ -92,7 +95,7 @@ const Home = () => {
         </div>
       </div>
       <Proyecto />
-      {/* <Video /> */}
+      <Video />
       <Caracteristicas />
       <TourVirtual />
       <Sector />

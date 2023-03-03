@@ -25,7 +25,7 @@ const CustomNavbar = () => {
         >
           <Nav className="linksContainer me-auto">
             <Nav.Link href="#proyecto">Proyecto</Nav.Link>
-            {/* <Nav.Link href="#video">Video</Nav.Link> */}
+            <Nav.Link href="#video">Video</Nav.Link>
             <Nav.Link href="#caracteristicas">Características</Nav.Link>
             <Nav.Link href="#tourVirtual">Tour Virtual</Nav.Link>
             <Nav.Link href="#sector">La Patagonia</Nav.Link>
