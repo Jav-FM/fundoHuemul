@@ -1,7 +1,7 @@
 import React from "react";
-import { Modal, Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import "./CustomModal.scss";
-import logo from "../../../assets/img/logo_blanco.png";
+import { Body, Footer } from "./Plantillas/Pascua";
 
 const CustomModal = ({ show, setShow, goToContact }) => {
   const handleClose = () => {
@@ -24,32 +24,13 @@ const CustomModal = ({ show, setShow, goToContact }) => {
       <Modal.Header id="modalHeader" closeButton closeLabel="Cerrar" />
 
       <Modal.Body>
-        <div id="modalBody">
-          <img id="modalLogo" src={logo} alt="logo" />
-          <h2 id="modalTitle">
-            Compra a precio de lanzamiento,<br></br>15% de descuento.
-          </h2>
-          <div id="modalMiddleContent">
-            <p>Visita y elige tu parcela en el Tour Virtual.</p>
-            <p id="slogan">Vive y disfruta la Patagonia.</p>
-          </div>
-
-          <div id="modalBottomContent">
-            <p>* Consulta promociones al contado.</p>
-          </div>
-        </div>
+        <Body />
       </Modal.Body>
       <Modal.Footer id="modalFooter">
-        <Button
-          size="lg"
-          variant="outline-dark mx-2"
-          onClick={handleWantAReservation}
-        >
-          Quiero más información
-        </Button>
-        <Button size="lg" variant="dark mx-2" onClick={handleClose}>
-          Cerrar
-        </Button>
+        <Footer
+          handleClose={handleClose}
+          handleWantAReservation={handleWantAReservation}
+        />
       </Modal.Footer>
     </Modal>
   );

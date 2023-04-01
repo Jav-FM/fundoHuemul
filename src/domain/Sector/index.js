@@ -81,13 +81,13 @@ const Sector = () => {
           <p>
             Rápido acceso al Aeropuerto de Balmaceda y a todos los servicios que
             necesitas en el centro de la ciudad de Coyhaique:
-            <ul>
-              <li>Colegios</li>
-              <li>Instituciones públicas</li>
-              <li>Clínicas y Bancos</li>
-              <li>Supermercados y Servicios</li>
-            </ul>
           </p>
+          <ul>
+            <li>Colegios</li>
+            <li>Instituciones públicas</li>
+            <li>Clínicas y Bancos</li>
+            <li>Supermercados y Servicios</li>
+          </ul>
         </div>
       </div>
     </section>
